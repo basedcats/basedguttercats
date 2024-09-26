@@ -1,0 +1,28 @@
+{
+ "description": "Cats are coming, but this time they've gone full based...",
+ "external_url": "https://x.com/CatsBased",
+ "image": "https://raw.githubusercontent.com/basedcats/basedguttercats/refs/heads/main/image/4.png",
+ "name": "Based Cat #4",
+ "attributes": [
+  {
+   "trait_type": "background",
+   "value": "Blue"
+  },
+  {
+   "trait_type": "fur",
+   "value": "White Tiger"
+  },
+  {
+   "trait_type": "beard",
+   "value": "Stubble"
+  },
+  {
+   "trait_type": "mouth",
+   "value": "Toothpick"
+  },
+  {
+   "trait_type": "eyes",
+   "value": "Square Shades"
+  }
+ ]
+}

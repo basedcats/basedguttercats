@@ -1,0 +1,32 @@
+{
+ "description": "Cats are coming, but this time they've gone full based...",
+ "external_url": "https://x.com/CatsBased",
+ "image": "https://raw.githubusercontent.com/basedcats/basedguttercats/refs/heads/main/image/8.png",
+ "name": "Based Cat #8",
+ "attributes": [
+  {
+   "trait_type": "background",
+   "value": "Blue"
+  },
+  {
+   "trait_type": "fur",
+   "value": "Silver"
+  },
+  {
+   "trait_type": "necklace",
+   "value": "Red Bandana"
+  },
+  {
+   "trait_type": "eyes",
+   "value": "Squinted Green"
+  },
+  {
+   "trait_type": "hat",
+   "value": "Afro"
+  },
+  {
+   "trait_type": "shirt",
+   "value": "Farmer"
+  }
+ ]
+}

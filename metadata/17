@@ -1,0 +1,20 @@
+{
+ "description": "Cats are coming, but this time they've gone full based...",
+ "external_url": "https://x.com/CatsBased",
+ "image": "https://raw.githubusercontent.com/basedcats/basedguttercats/refs/heads/main/image/17.png",
+ "name": "Based Cat #17",
+ "attributes": [
+  {
+   "trait_type": "background",
+   "value": "Blue"
+  },
+  {
+   "trait_type": "fur",
+   "value": "Grey Tats"
+  },
+  {
+   "trait_type": "eyes",
+   "value": "Squinted Yellow"
+  }
+ ]
+}
