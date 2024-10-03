@@ -1,0 +1,28 @@
+{
+ "description": "Cats are coming, but this time they've gone full based and they ain't afraid to show it",
+ "external_url": "https://x.com/CatsBased",
+ "image": "https://raw.githubusercontent.com/basedcats/basedguttercats/refs/heads/main/image/118.png",
+ "name": "Based Cat #118",
+ "attributes": [
+  {
+   "trait_type": "background",
+   "value": "Based"
+  },
+  {
+   "trait_type": "fur",
+   "value": "Piebald"
+  },
+  {
+   "trait_type": "beard",
+   "value": "Scruffy"
+  },
+  {
+   "trait_type": "necklace",
+   "value": "Gold Chains"
+  },
+  {
+   "trait_type": "eyes",
+   "value": "Blue"
+  }
+ ]
+}

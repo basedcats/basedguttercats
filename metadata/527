@@ -1,0 +1,28 @@
+{
+ "description": "Cats are coming, but this time they've gone full based and they ain't afraid to show it",
+ "external_url": "https://x.com/CatsBased",
+ "image": "https://raw.githubusercontent.com/basedcats/basedguttercats/refs/heads/main/image/527.png",
+ "name": "Based Cat #527",
+ "attributes": [
+  {
+   "trait_type": "background",
+   "value": "Based"
+  },
+  {
+   "trait_type": "fur",
+   "value": "Purple Cheshire"
+  },
+  {
+   "trait_type": "eyes",
+   "value": "Yellow"
+  },
+  {
+   "trait_type": "hat",
+   "value": "Sicko"
+  },
+  {
+   "trait_type": "shirt",
+   "value": "Jail"
+  }
+ ]
+}

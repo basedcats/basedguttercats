@@ -1,0 +1,36 @@
+{
+ "description": "Cats are coming, but this time they've gone full based and they ain't afraid to show it",
+ "external_url": "https://x.com/CatsBased",
+ "image": "https://raw.githubusercontent.com/basedcats/basedguttercats/refs/heads/main/image/969.png",
+ "name": "Based Cat #969",
+ "attributes": [
+  {
+   "trait_type": "background",
+   "value": "Based"
+  },
+  {
+   "trait_type": "fur",
+   "value": "Calico"
+  },
+  {
+   "trait_type": "necklace",
+   "value": "Thin Silver"
+  },
+  {
+   "trait_type": "mouth",
+   "value": "Toothpick"
+  },
+  {
+   "trait_type": "eyes",
+   "value": "Blue"
+  },
+  {
+   "trait_type": "hat",
+   "value": "Beanie"
+  },
+  {
+   "trait_type": "shirt",
+   "value": "Ski Jacket"
+  }
+ ]
+}

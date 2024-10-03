@@ -1,36 +1,32 @@
 {
- "description": "Cats are coming, but this time they've gone full based...",
+ "description": "Cats are coming, but this time they've gone full based and they ain't afraid to show it",
  "external_url": "https://x.com/CatsBased",
  "image": "https://raw.githubusercontent.com/basedcats/basedguttercats/refs/heads/main/image/18.png",
  "name": "Based Cat #18",
  "attributes": [
   {
    "trait_type": "background",
-   "value": "Blue"
+   "value": "Based"
   },
   {
    "trait_type": "fur",
-   "value": "Black"
+   "value": "Savannah"
   },
   {
    "trait_type": "beard",
    "value": "Stubble"
   },
   {
-   "trait_type": "necklace",
-   "value": "Red Bandana"
+   "trait_type": "mouth",
+   "value": "Toothpick"
   },
   {
    "trait_type": "eyes",
-   "value": "Heterochromia Yellow Blue"
-  },
-  {
-   "trait_type": "hat",
-   "value": "Sicko"
+   "value": "Yellow"
   },
   {
    "trait_type": "shirt",
-   "value": "Pimp"
+   "value": "White Tank"
   }
  ]
 }

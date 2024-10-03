@@ -1,0 +1,36 @@
+{
+ "description": "Cats are coming, but this time they've gone full based and they ain't afraid to show it",
+ "external_url": "https://x.com/CatsBased",
+ "image": "https://raw.githubusercontent.com/basedcats/basedguttercats/refs/heads/main/image/362.png",
+ "name": "Based Cat #362",
+ "attributes": [
+  {
+   "trait_type": "background",
+   "value": "Based"
+  },
+  {
+   "trait_type": "fur",
+   "value": "Savannah"
+  },
+  {
+   "trait_type": "earring",
+   "value": "Gold Hoop"
+  },
+  {
+   "trait_type": "beard",
+   "value": "Stubble"
+  },
+  {
+   "trait_type": "mouth",
+   "value": "Cig"
+  },
+  {
+   "trait_type": "eyes",
+   "value": "Squinted Green"
+  },
+  {
+   "trait_type": "hat",
+   "value": "Psychedelic"
+  }
+ ]
+}

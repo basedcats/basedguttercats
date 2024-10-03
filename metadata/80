@@ -1,0 +1,40 @@
+{
+ "description": "Cats are coming, but this time they've gone full based and they ain't afraid to show it",
+ "external_url": "https://x.com/CatsBased",
+ "image": "https://raw.githubusercontent.com/basedcats/basedguttercats/refs/heads/main/image/80.png",
+ "name": "Based Cat #80",
+ "attributes": [
+  {
+   "trait_type": "background",
+   "value": "Based"
+  },
+  {
+   "trait_type": "fur",
+   "value": "Grey"
+  },
+  {
+   "trait_type": "earring",
+   "value": "Gold Stud"
+  },
+  {
+   "trait_type": "beard",
+   "value": "Whiskers"
+  },
+  {
+   "trait_type": "necklace",
+   "value": "Red Bandana"
+  },
+  {
+   "trait_type": "mouth",
+   "value": "Cig"
+  },
+  {
+   "trait_type": "eyes",
+   "value": "Green"
+  },
+  {
+   "trait_type": "hat",
+   "value": "Sicko"
+  }
+ ]
+}

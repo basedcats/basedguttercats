@@ -1,0 +1,36 @@
+{
+ "description": "Cats are coming, but this time they've gone full based and they ain't afraid to show it",
+ "external_url": "https://x.com/CatsBased",
+ "image": "https://raw.githubusercontent.com/basedcats/basedguttercats/refs/heads/main/image/938.png",
+ "name": "Based Cat #938",
+ "attributes": [
+  {
+   "trait_type": "background",
+   "value": "Based"
+  },
+  {
+   "trait_type": "fur",
+   "value": "Piebald"
+  },
+  {
+   "trait_type": "beard",
+   "value": "Stubble"
+  },
+  {
+   "trait_type": "necklace",
+   "value": "Headphones"
+  },
+  {
+   "trait_type": "eyes",
+   "value": "Rainbow Shades"
+  },
+  {
+   "trait_type": "hat",
+   "value": "Afro"
+  },
+  {
+   "trait_type": "shirt",
+   "value": "Gold Jacket"
+  }
+ ]
+}

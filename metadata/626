@@ -1,0 +1,32 @@
+{
+ "description": "Cats are coming, but this time they've gone full based and they ain't afraid to show it",
+ "external_url": "https://x.com/CatsBased",
+ "image": "https://raw.githubusercontent.com/basedcats/basedguttercats/refs/heads/main/image/626.png",
+ "name": "Based Cat #626",
+ "attributes": [
+  {
+   "trait_type": "background",
+   "value": "Based"
+  },
+  {
+   "trait_type": "fur",
+   "value": "Leopard"
+  },
+  {
+   "trait_type": "necklace",
+   "value": "Silver Chains"
+  },
+  {
+   "trait_type": "eyes",
+   "value": "VR"
+  },
+  {
+   "trait_type": "hat",
+   "value": "Afro"
+  },
+  {
+   "trait_type": "shirt",
+   "value": "Black Tank"
+  }
+ ]
+}

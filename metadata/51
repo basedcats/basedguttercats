@@ -1,0 +1,36 @@
+{
+ "description": "Cats are coming, but this time they've gone full based and they ain't afraid to show it",
+ "external_url": "https://x.com/CatsBased",
+ "image": "https://raw.githubusercontent.com/basedcats/basedguttercats/refs/heads/main/image/51.png",
+ "name": "Based Cat #51",
+ "attributes": [
+  {
+   "trait_type": "background",
+   "value": "Based"
+  },
+  {
+   "trait_type": "fur",
+   "value": "Silver"
+  },
+  {
+   "trait_type": "earring",
+   "value": "Diamond Hoop"
+  },
+  {
+   "trait_type": "necklace",
+   "value": "Dog Tags"
+  },
+  {
+   "trait_type": "eyes",
+   "value": "Heterochromia Yellow Blue"
+  },
+  {
+   "trait_type": "hat",
+   "value": "Durag"
+  },
+  {
+   "trait_type": "shirt",
+   "value": "Jobs"
+  }
+ ]
+}
