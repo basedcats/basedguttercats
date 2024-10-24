@@ -1,0 +1,25 @@
+{
+ "description": "Cats are coming, but this time they've gone full ape shit crazy and they ain't afraid to show it",
+ "external_url": "https://x.com/CatsAped",
+ "image": "https://raw.githubusercontent.com/basedcats/basedguttercats/refs/heads/main/image/62.png",
+ "name": "Aped Cat #62",
+ "attributes": [
+  {
+   "trait_type": "background",
+   "value": "Aped"
+  },
+  {
+   "trait_type": "fur",
+   "value": "Bengal"
+  },
+  {
+   "trait_type": "eyes",
+   "value": "Squinted Yellow"
+  },
+  {
+   "trait_type": "hat",
+   "value": "Durag"
+  }
+ ]
+}
+
