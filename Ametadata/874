@@ -1,0 +1,37 @@
+{
+ "description": "Cats are coming, but this time they've gone full ape shit crazy and they ain't afraid to show it",
+ "external_url": "https://x.com/CatsAped",
+ "image": "https://raw.githubusercontent.com/basedcats/basedguttercats/refs/heads/main/image/874.png",
+ "name": "Aped Cat #874",
+ "attributes": [
+  {
+   "trait_type": "background",
+   "value": "Aped"
+  },
+  {
+   "trait_type": "fur",
+   "value": "Bengal Tiger"
+  },
+  {
+   "trait_type": "beard",
+   "value": "Whiskers"
+  },
+  {
+   "trait_type": "necklace",
+   "value": "Headphones"
+  },
+  {
+   "trait_type": "eyes",
+   "value": "Blue"
+  },
+  {
+   "trait_type": "hat",
+   "value": "Beanie"
+  },
+  {
+   "trait_type": "shirt",
+   "value": "Black Tank"
+  }
+ ]
+}
+
