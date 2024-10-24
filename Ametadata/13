@@ -10,19 +10,31 @@
   },
   {
    "trait_type": "fur",
-   "value": "what fur? he cool af"
+   "value": "What Fur? He Cool AF"
+  },
+  {
+   "trait_type": "earring",
+   "value": "Cool Turds"
+  },
+  {
+   "trait_type": "beard",
+   "value": "Shaved & Cool"
+  },
+  {
+   "trait_type": "necklace",
+   "value": "Coolness On Chain"
   },
   {
    "trait_type": "mouth",
-   "value": ""what mouth? he ape shit crazy"
+   "value": "What Mouth? He Ape Shit Crazy"
   },
   {
    "trait_type": "eyes",
-   "value": "what eyes? the dude only sees cool"
+   "value": "What Eyes? The Dude Only Sees Cool"
   },
   {
    "trait_type": "shirt",
-   "value": "shirt is for the uncool"
+   "value": "Shirt Is For The UnCool"
   }
  ]
 }
