@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Based Gutter Cats NFT Mint</title>
+    <title>Ape Fools NFT Mint</title>
     <style>
         /* Basic styling for gradients, responsive design, and buttons */
 
@@ -45,19 +45,8 @@
         #connectButton,
         #switchNetworkButton,
         #mintButton,
-        #burnButton {
-            background-color: #ff7e5f;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 30px;
-            font-size: 1.2em;
-            color: #fff;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
 
         #connectButton:hover,
-        #burnButton:hover,
         #switchNetworkButton:hover,
         #mintButton:hover {
             background-color: #feb47b;
@@ -148,23 +137,6 @@
             }
         }
 
-        /* Mobile responsiveness */
-        @media (max-width: 768px) {
-            #contents {
-                width: 95%;
-            }
-
-            #connectButton,
-            #switchNetworkButton,
-            #mintButton,
-            #burnButton {
-                font-size: 1em;
-                padding: 8px 15px;
-            }
-
-
-
-        }
     </style>
 
     <script src="ethers.umd.js" type="application/javascript"></script>
@@ -179,33 +151,21 @@
     </div>
 
     <div id="contents">
-        <h1>Based Gutter Cats</h1>
+        <h1>Ape Fools</h1>
         <h2>Mint your NFT on the Base Sepolia Testnet</h2>
         <p>First NFT mint for each wallet is <b><i>Free!</i></b></p>
         <label for="mintAmount">Choose amount to mint (Max 5 per wallet):</label>
         <input type="number" id="mintAmount" min="1" max="5" value="1">
         <button id="mintButton">Mint NFT</button>
-        <button id="burnButton">Burn Kitty</button>
         <div id="ownedLabel"></div>
         <div id="mintsLeftLabel"></div> <!-- New label for available mints -->
         <div id="status"></div>
     </div>
 
 
-
-    <!-- Modal for burning NFT -->
-    <div id="modal">
-        <div id="modalContent">
-            <span id="closeModal">&times;</span>
-            <h2>Enter the NFT ID to Burn</h2>
-            <input type="number" id="nftId" placeholder="NFT ID" min="1" />
-            <button id="confirmBurnButton">Confirm Burn</button>
-        </div>
-    </div>
-
     <script>
 
-        const contractAddress = "0x18a2172bCd1351BeDe78382B2F27E92E0cf0A014"; // Replace with your contract address
+        const contractAddress = "0xb741C2f06FA5b7aD042Eae5c78B3A3f13A40a8fA"; // contract address
         let contractABI;
 
 
@@ -325,54 +285,20 @@
 
             const tx = await contract.mint(mintAmount, { value: totalPrice });
             document.getElementById("mintButton").disabled = true;
-            document.getElementById("burnButton").disabled = true;
             document.getElementById("status").innerText = "Minting in progress...";
 
             const receipt = await tx.wait();
             document.getElementById("status").innerText = `Successfully minted ${mintAmount} NFTs! TxHash: ${receipt.transactionHash}`;
             document.getElementById("mintButton").disabled = false;
-            document.getElementById("burnButton").disabled = false;
             document.getElementById("ownedLabel").innerText = "Owned NFTs: " + await getNFTBalance();
             document.getElementById("mintsLeftLabel").innerText = "Mints Left: " + await getMintsLeft();
         }
 
         document.getElementById("mintButton").addEventListener("click", mintNFT);
 
-        // Check if burning is allowed and enable burn button
-        async function checkBurnStatus() {
-            const signer = await connectToMetaMask();
-            if (!signer) return;
-
-            const contract = new ethers.Contract(contractAddress, contractABI, signer);
-            const canBurn = await contract.canBurn(); // Check burn status from contract
-
-        }
-
         // Show modal to get NFT ID
         const modal = document.getElementById("modal");
         const closeModal = document.getElementById("closeModal");
-
-        document.getElementById("burnButton").addEventListener("click", async () => {
-            const signer = await connectToMetaMask();
-            if (!signer) return;
-
-            const contract = new ethers.Contract(contractAddress, contractABI, signer);
-
-            try {
-                // Check if the burn action is allowed
-                const canBurn = await contract.canBurn();
-
-                if (canBurn) {
-                    // If canBurn is true, show the modal
-                    modal.style.display = "block";
-                } else {
-                    document.getElementById("status").innerText = "Burning is not allowed.";
-                }
-            } catch (err) {
-                console.error("Error checking burn status:", err);
-                document.getElementById("status").innerText = err.reason;
-            }
-        });
 
         closeModal.onclick = function () {
             modal.style.display = "none";
@@ -384,64 +310,7 @@
             }
         };
 
-        // Burn NFT after confirming NFT ID
-        async function burnKitty() {
-            const signer = await connectToMetaMask();
-            if (!signer) return;
-
-            const nftId = document.getElementById("nftId").value; // Get NFT ID from input
-            const contract = new ethers.Contract(contractAddress, contractABI, signer);
-
-            try {
-                // Check if burning is allowed
-                const canBurn = await contract.canBurn();
-                if (!canBurn) {
-                    document.getElementById("status").innerText = "Burning is not allowed.";
-                    document.getElementById("status").classList.add("error");
-                    return;
-                }
-
-                if (!nftId) {
-                    alert("Please enter an NFT ID.");
-                    return;
-                }
-
-                // Show spinner and disable button
-                const burnButton = document.getElementById("confirmBurnButton");
-                burnButton.innerHTML = 'Burning <span class="spinner"></span>';
-                burnButton.disabled = true;
-
-                
-                const tx = await contract.burnKitty(nftId);
-                document.getElementById("status").innerText = "Burning in progress...";
-                document.getElementById("status").classList.remove("error");
-
-                const receipt = await tx.wait();
-                document.getElementById("status").innerText = `Successfully burned NFT! TxHash: ${receipt.transactionHash}`;
-                document.getElementById("ownedLabel").innerText = "Owned NFTs: " + await getNFTBalance();
-                document.getElementById("mintsLeftLabel").innerText = "Mints Left: " + await getMintsLeft();
-
-
-            } catch (err) {
-                console.error(err);
-
-                document.getElementById("status").innerText = err.reason || "Error occurred during burning.";
-                document.getElementById("status").classList.add("error");
-
-            } finally {
-                modal.style.display = "none";
-                // Reset button text and re-enable button
-                const burnButton = document.getElementById("confirmBurnButton");
-                burnButton.innerHTML = 'Confirm Burn';
-                burnButton.disabled = false;
-            }
-        }
-
-
-        document.getElementById("confirmBurnButton").addEventListener("click", burnKitty);
-
-
-        // Load ABI and check burn status on page load
+        // Load ABI
         window.onload = async () => {
             try {
                 if (!window.ethereum) {
@@ -474,9 +343,8 @@
 
             try {
                 contractABI = await loadABI();
-                // await checkBurnStatus(); // Check if burning is allowed
+
             } catch (error) {
-                // console.error("Failed to load ABI or check burn status:", error.reason);
 
                 document.getElementById("status").innerText = "Failed to load ABI";
             }
